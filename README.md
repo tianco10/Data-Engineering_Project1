@@ -5,6 +5,6 @@ This project is to define fact and dimension tables for a star schema, and write
 
 #### Database Schema
 Please refer to the below star schema.
-Star Schema.png
+![alt text](http://url/to/Star Schema.png)
 
 #### ETL Pipeline
