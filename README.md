@@ -7,20 +7,24 @@ A startup called Sparkify wants to analyze the data they've been collecting on s
 This project is to define fact and dimension tables for a star schema, and write an ETL pipeline that transfers data from files in two local directories into these tables in Postgres using Python and SQL.
 
 #### Database Schema
-There are one fact table, songplays, and four dimensions tables, which are songs, artists, users, and start_time.
-![schema](./image/Schema.png)
-
+Fact table: songplays <br>
+Dimensions tables: songs, artists, users, and start_time
+* Field with underline is the primary key.
+![schema](./image/StarSchema.png)
 
 #### ETL Pipeline
 * Create a database called sparkifydb
 * Create tables as needed based on the star schema
-* Load and transform the data from json files (log_data and song_data)
+* Load and transform the data from json files (log_data and song_data) <br>
+```drop_duplicate(keep = 'first')``` is used when reading the json file
 * Insert the data to the corresponding tables
 * Test the database
 
 #### How to Run
+* Run `` create_tables.py`` to create tables in the sparkifydb database
+* Run `` etl.py`` to execute the ETL process
 
-#### Example Queries
+#### Example Query
 <I> How many songs does an artist have on Sparkify?
 </I>
 ``` SQL
