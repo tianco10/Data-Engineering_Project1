@@ -5,6 +5,8 @@ This project is to define fact and dimension tables for a star schema, and write
 
 #### Database Schema
 Please refer to the below star schema.
-![alt text](http://url/to/StarSchema.png)
 
 #### ETL Pipeline
+* Create a database called sparkifydb
+* Create tables as needed based on the star schema
+* Load and transform the data from json files (log_data and song_data)
