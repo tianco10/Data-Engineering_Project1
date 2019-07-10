@@ -3,8 +3,15 @@
 #### Introduction
 A startup called Sparkify wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team is particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 
-#### Description
+#### Project Description
 This project is to define fact and dimension tables for a star schema, and write an ETL pipeline that transfers data from files in two local directories into these tables in Postgres using Python and SQL.
+
+#### File Description
+```test.ipynb``` displays the first few rows of each table to check the database. <br>
+```create_tables.py``` drops and creates your tables. <br>
+```etl.ipynb``` reads and processes a single file from song_data and log_data and loads the data into your tables. <br>
+```etl.py``` reads and processes files from song_data and log_data and loads them into your tables. <br>
+```sql_queries.py``` contains all the sql queries, and is imported into the last three files above. <br>
 
 #### Database Schema
 Fact table: songplays <br>
@@ -21,8 +28,9 @@ Dimensions tables: songs, artists, users, and start_time
 * Test the database
 
 #### How to Run
-* Run `` create_tables.py`` to create tables in the sparkifydb database
-* Run `` etl.py`` to execute the ETL process
+* Open the terminal
+* Enter `` python create_tables.py`` to create tables in the sparkifydb database
+* Enter `` python etl.py`` to execute the ETL process
 
 #### Example Query
 <I> How many songs does an artist have on Sparkify?
