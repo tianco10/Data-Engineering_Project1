@@ -9,7 +9,7 @@ This project is to define fact and dimension tables for a star schema, and write
 #### Database Schema
 Fact table: songplays <br>
 Dimensions tables: songs, artists, users, and start_time
-* Field with underline is the primary key.
+* Fields with underline are primary keys.
 ![schema](./image/StarSchema.png)
 
 #### ETL Pipeline
