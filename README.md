@@ -8,9 +8,9 @@ This project is to define fact and dimension tables for a star schema, and write
 
 #### File Description
 ```test.ipynb``` displays the first few rows of each table to check the database. <br>
-```create_tables.py``` drops and creates your tables. <br>
-```etl.ipynb``` reads and processes a single file from song_data and log_data and loads the data into your tables. <br>
-```etl.py``` reads and processes files from song_data and log_data and loads them into your tables. <br>
+```create_tables.py``` drops and creates the tables. <br>
+```etl.ipynb``` reads and processes a single file from song_data and log_data and loads the data into the tables. <br>
+```etl.py``` reads and processes files from song_data and log_data and loads them into the tables. <br>
 ```sql_queries.py``` contains all the sql queries, and is imported into the last three files above. <br>
 
 #### Database Schema
